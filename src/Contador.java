@@ -20,5 +20,6 @@ public class Contador {
 
     public String mostrar() {
         return "Valor: " + valor;
+
     }
 }
