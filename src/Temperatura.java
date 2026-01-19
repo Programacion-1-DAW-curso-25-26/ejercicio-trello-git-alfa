@@ -9,13 +9,17 @@ public class Temperatura {
     }
 
     public double convertirACelsius() {
-        // TODO: implementar conversión si la unidad es F
-        return 0;
+        if (unidad.equals("F")) {
+            return (valor - 32) * 5 / 9;
+        }
+        return valor;
     }
 
     public double convertirAFahrenheit() {
-        // TODO: implementar conversión si la unidad es C
-        return 0;
+        if (unidad.equals("C")) {
+            return (valor * 9 / 5) + 32;
+        }
+        return valor;
     }
 
     public String mostrar() {
