@@ -1,5 +1,5 @@
 public class Mensaje {
-
+    // ATRIBUTOS
     private String texto;
 
     public Mensaje(String texto) {
@@ -7,18 +7,18 @@ public class Mensaje {
     }
 
     public int contarPalabras() {
-        // TODO: contar palabras separadas por espacios
-        return 0;
+        // Quitamos los espacios del inicio y del final con el trim ()
+        // Con split("\\s+") dividimos el texto por espacios
+        int palabras = texto.trim().split("\\s+").length;
+        return palabras;
     }
 
     public String aMayusculas() {
-        // TODO: devolver texto en mayúsculas
-        return "";
+        return texto.toUpperCase();
     }
 
     public String aMinusculas() {
-        // TODO: devolver texto en minúsculas
-        return "";
+        return texto.toLowerCase();
     }
 
     public String mostrar() {

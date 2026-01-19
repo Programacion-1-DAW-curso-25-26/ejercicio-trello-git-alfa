@@ -19,7 +19,11 @@ public class PanelDePruebas {
     }
 
     public static void probarMensaje() {
-        // TODO: probar mayúsculas, minúsculas, contar palabras
+        Mensaje hola = new Mensaje("Buenos Días compañero");
+        System.out.println(hola.mostrar());
+        System.out.println(hola.contarPalabras());
+        System.out.println(hola.aMayusculas());
+        System.out.println(hola.aMinusculas());
     }
 
     public static void probarCronometro() {
